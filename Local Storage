@@ -1,3 +1,22 @@
+** Window.localStorage **
+==>  The localStorage read-only property of the interface allows you to access a Storage object for the Document's Origin ; the stored data is saved across the browser
+     sessions.
+     
+ ==>  LocalStorage is similar to sessionStorage , except that while localStorage data has no expiration time , sessionStorage data cleared when the page sessions ends i.e, 
+    when the page is closed.
+ 
+ ==>  The keys and the values stored with localStorage are always in the UTF-16 string format , which uses two bytes per character.As with objects , integer keys are automatically 
+      converted to strings.
+ 
+ * * SYNTAX * *
+ ==> To add an item --- > localStorage.setItem('myCar' , 'Fortuner' );
+ 
+ ==> To read an item --- >const car=localStorage.getItem('myCar');
+ 
+ ==>To remove an item --> localStorage.removeItem('myCar');
+ 
+ ==>To remove all the localStorage --> localStorage.clear();
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -10,9 +29,9 @@
 
 <script>
 // Set Item
-localStorage.setItem("lastname", "Smith");
+localStorage.setItem("firstname", "Smith");
 // Retrieve
-document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+document.getElementById("demo").innerHTML = localStorage.getItem("firstname");
 </script>
 
 </body>

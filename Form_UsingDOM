@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body background="cyan">
+    <h1 style="color: blue ">JavaScript HTML DOM</h1>
+    <p style="color :red">Finding HTML Elements Using <b>Document.forms </b>>.</p>
+    <form id ="form1" action="/action_page.php">
+        First Name :<input type="text" name="fname" value="Shreya"><br><br>
+        Last Name:<input type="text" name="lname" value="Singh"><br><br>
+        Contact Number:<input type="number" name="cnumber" value="9991488554"><br><br>
+        Email: <input type="text" name="emailaddress" value="psshreyasingh23@gmail.com"><br><br>
+        <input type="Submit" value="Submit">
+        </form>
+        <p>These are the values of each element in the form.</p>
+        <p id="demo"></p>
+        <script>
+            
+            const x = document.forms["form1"];
+            let text = "";
+            for (let i = 0; i < x.length ;i++) {
+                 text += x.elements[i].value + "<br>";
+                }
+                document.getElementById("demo").innerHTML = text;
+
+        </script>
+    
+</body>
+</html>

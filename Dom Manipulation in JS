@@ -6,4 +6,20 @@ There are several elements to find elements in DOM :-
 *Finding HTML elements by HTML Object Collections
 
 
-Get Element By  ClassName
+1. Get Element By  ClassName
+==> If you want to find all HTML elements with the same class name , use getElementsByClassName()
+<!DOCTYPE>
+<html>
+<body>
+<h2>JavaScript HTML DOM</h2>
+<p>Finding HTML Elements by Class Name</p>
+<p class="FirstProgram">Hello Engineer's</p>
+<p class="FirstProgram">This examples demonstrates the <b>getElementsByClassName()</b> method.</p>
+<p id="demo"></p>
+//js
+<script>
+const x=document.getElementByClassName("FirstProgram");
+document.getElementById("demo").innerHTML='the first paragraph (index 0) with class="intro" is:' +x[0].innerHTML;
+</script>
+</body>
+</html>

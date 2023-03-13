@@ -1,0 +1,37 @@
+**appendChild() ==> The appendChild() method appends a node(element) as the last child of an element . **
+//Ex 1. ==>Append an item to a list 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild</title>
+</head>
+<body>
+    <h1>The Element Object</h1>
+    <h2>The appendChild() Method</h2>
+    <ul id="listofmychoice">
+        <l1>Cold Drink</l1>
+        <l1>Coffee</l1>
+        <li>Energy Drink</li>
+    </ul>
+    <p style ="background-color: aqua;">Click "Append" to append(add) an item to the end of the list :</p>
+    <button onclick="myFunction()">Append</button>
+    <script>
+        function myFunction(){
+            //create an li node
+            const node=document.createElement("li");
+
+            //create a text node
+            const textnode=document.createTextNode("water");
+            //Append the textnode to the "li" node:
+            node.appendChild(textnode);
+            //Append the "li" node to the list:
+            document.getElementById("listofmychoice").appendChild(node);
+        }
+
+    </script>
+    
+</body>
+</html>

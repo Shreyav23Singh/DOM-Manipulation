@@ -52,4 +52,26 @@ Get the first element with class="example":
 If you want to find all the HTML elements that match a specified CSS Selector(id , class names , types , attributes , values of attributes etc)use the querySelectorAll()
 method.
 //Example --Returns a list of all <p> elements
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll()</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+    <p>Finding HTML Elements by querySelectorAll()</p>
+    <p class ="Intro">Hello World!</p>
+    <p class ="Intro">This example demonstrate the <b>querySelectorAll</b> method.</p>
+    <p id="demo"></p>
+    <script>
+        const x=document.querySelectorAll("p.Intro");
+        document.getElementById("demo").innerHTML='The first paragraph (index 0) with class="Intro" is :' +x[0].innerHTML;
+        
+    </script>
+    
+</body>
+</html>
 

@@ -1,1 +1,9 @@
+There are several elements to find elements in DOM :-
+*Finding HTML elements by ID
+*Finding HTML elements by class name
+*Finding HTML elements by  tag name
+*Finding HTML elements by CSS Selectors
+*Finding HTML elements by HTML Object Collections
+
+
 Get Element By  ClassName

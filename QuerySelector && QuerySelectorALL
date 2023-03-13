@@ -47,3 +47,9 @@ Get the first element with class="example":
     
 </body>
 </html>
+
+*=* querySelectorAll *=*
+If you want to find all the HTML elements that match a specified CSS Selector(id , class names , types , attributes , values of attributes etc)use the querySelectorAll()
+method.
+//Example --Returns a list of all <p> elements
+

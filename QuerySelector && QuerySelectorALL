@@ -23,3 +23,27 @@ Example 1-get the first <p>Element\
     
 </body>
 </html>
+Get the first element with class="example":
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The querySelector() Method</h2>
+    <p>Add a backgroundColor to the first element with class ="example" :</p>
+    <p class ="example">This is the first paragraph</p>
+    <p class ="example">This is the second paragraph</p>
+    <script>
+        document.querySelector(".example").style.backgroundColor="cyan";
+        //document.querySelector(".example").style.backgroundColor = "red";
+    </script>
+
+    
+</body>
+</html>

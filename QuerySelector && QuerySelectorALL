@@ -75,3 +75,44 @@ method.
 </body>
 </html>
 
+//Assignment by Sharpener
+//Query Selector
+
+/* The querySelector () method of JavaScript is used for selecting only the first element from the code. But what in case we want to retain more 
+than one CSS selector value from the code. So, for such a case, we use another method of the Document interface, which is known 
+as the querySelectorAll () method.  */
+
+var header = document.querySelector('#main-header');
+header.style.borderBottom= '4px solid grey';
+
+var input = document.querySelector('input');
+input.value='Hello World';
+
+var submit =document.querySelector('input[type="submit"]');
+submit.value="send";
+
+ var item=document.querySelector(".list-group-item");
+item.style.color='red';
+
+/* Throwing Error
+
+
+var lastItem =document.querySelector(".list-group-item : last child");
+lastItem.style.color='blue';
+
+var secondItem =document.querySelector('.list-group-item : nth-child(2)');
+secondItem.style.color='pink'; */
+
+/* //Query Selector All
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+titles[0].textContent='Success';
+titles[1].textContent='Determination';
+
+var odd=document.querySelectorAll('li : nth-child(odd)');
+var even=document.querySelectorAll('li : nth-child(even)');
+
+for(var i=0;i<odd.length;i++){
+  odd[i].style.backgroundColor='red';
+  even[i].style.backgroundColor='red';
+}

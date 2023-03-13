@@ -1,1 +1,21 @@
+** Finding HTML Elements By Tag Name -- getelementsByTagName **
+==> The HTML DOM getElementsByTagName() method in HTML returns the collection of all the elements in the document with the given tag name.
+To extract any info just iterate through all the elements using the length property. 
+
+==> Syntax: <==
+
+var elements = document.getElementsByTagName(name);
+
+//example
+<html>
+<body>
+<h2>JavaScript HTML DOM </h2>
+<p>Finding HTML Elements by Tag Nmae</p>
+<p>This examples demonstrates the <b>getElementsByTagName </b> method.</p>
+<p id="demo"></p>
+<script>
+const element =document.getElementsByTagName("p");
+document.getElementsById("demo").innerHTML='The text in first paragraph(index 0) is:' + elements[0].innerHTML;
+</script>
+</html>
 

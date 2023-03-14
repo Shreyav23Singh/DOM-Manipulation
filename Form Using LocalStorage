@@ -111,20 +111,29 @@
 
     </form>
     </div>
+    <p id="demo"></p>
     
     <script>
         // Set Item
-        // localStorage.setItem("fname", "Shreya");
-        // localStorage.setItem("lname", "Singh");
-        // localStorage.setItem("integer", "6200340418");
-        // localStorage.setItem("LandlineNo", "9851600731");
-        // localStorage.setItem("emailaddress", "psshreyasingh23@gmail.com");
-        // localStorage.setItem("text", "New Delhi");
-        let value=prompt("Enter Details");
+        localStorage.setItem("fname", "Shreya");
+        localStorage.setItem("lname", "Singh");
+        localStorage.setItem("integer", "6200340418");
+        localStorage.setItem("LandlineNo", "9851600731");
+        localStorage.setItem("emailaddress", "psshreyasingh23@gmail.com");
+        localStorage.setItem("text", "New Delhi");
+        //let value=prompt("Enter Details");
+
+        //getItem
+        document.getElementById("demo").innerHTML=localStorage.getItem("fname");
+        document.getElementById("demo").innerHTML=localStorage.getItem("lname");
+        document.getElementById("demo").innerHTML=localStorage.getItem("integer");
+        document.getElementById("demo").innerHTML=localStorage.getItem("LandlineNo");
+        document.getElementById("demo").innerHTML=localStorage.getItem("emailaddress");
+        document.getElementById("demo").innerHTML=localStorage.getItem("text");
+
         
-        localStorage.setItem("fname",value);
-        localStorage.setItem("lname",value);
-        console.log(localStorage.getItem(value));
+        
+        //console.log(localStorage.getItem(value));
         
         
         </script>

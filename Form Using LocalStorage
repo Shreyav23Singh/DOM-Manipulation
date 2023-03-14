@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        input[type=text],select{
+            width: 100%;
+            padding: 4px 9px;
+            border-color: blue;
+            border-radius:4px;
+            box-sizing: border-box;
+            display: inline-block;
+            text-decoration:none;
+            text-transform: capitalize;
+            
+            
+
+
+        }
+        input[type=integer],select{
+            width: 100%;
+            padding: 4px 9px;
+            border-color: blue;
+            border-radius:4px;
+            box-sizing: border-box;
+            display: inline-block;
+
+        }
+        input[type=Submit]{
+            background-color:red;
+            color:white;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            padding: 8px 12px;
+            margin: 1px;
+
+        }
+
+        input[type=Submit]:hover{
+            background-color:#45a049;
+            color: aqua;
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h3><center><u>Form Using HTML , CSS </u></center></h3>
+    <div>
+    <form id ="form2"action="/action_page.php">
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your Name.."><br><br>
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" name="lastname" placeholder=" Your Last Name.."><br><br>
+        <label for="integer">Contact No : </label>
+        <input type="integer" id="contactNo" name="Contact Number" placeholder="First preference number"><br><br>
+        <label for="LandlineNo">Landline No : </label>
+        <input type="integer" id="LandlineNo" name="Landline Number" placeholder="Second preference number"><br><br>
+        <label for="emailaddress">Email : </label>
+        <input type="text" id="emailaddress" name="email" placeholder="Enter Your email.."><br><br>
+        <label for="text">Address : </label>
+        <input type="text" id="Address" name="address" placeholder="Enter Your address.."><br><br>
+        <label for="caste">Caste : </label>
+        <select id="Caste" name ="Caste">
+            <option>Choose an Option</option>
+            <option value="1">General</option>
+            <option value="2">OBC</option>
+            <option value="3">SC</option>
+            <option value="2">ST</option>
+            <option value="2">OBC</option>
+            <option value="2">Others</option>
+        </select><br><br>
+        <label for="Course">Course :</label>
+        <select id="Course" name ="Course">
+            <option>Choose an Option:</option>
+            <option value="1">Btech</option>
+            <option value="2">BCA</option>
+            <option value="3">BCom</option>
+            <option value="4">BBA</option>
+            <option value="5">BA</option>
+            <option value="6">Mtech</option>
+            <option value="7">MCA</option>
+            <option value="8">MCom</option>
+            <option value="9">MA</option>
+            <option value="10">MBA</option>
+            <option value="11">Pharma</option>
+            <option value="12">Agriculture</option>
+            <option value="13">Diploma</option>
+
+        </select><br><br>
+        <label for="ModeOfAdmission">Mode Of Admission :</label> 
+        <select id="Admission" name="adm">
+            <option>Choose an option</option>
+            <option value="1">Regular</option>
+            <option value="2" >Distance</option>
+        </select><br><br>
+        <label for="admission Fees">Admission Fees : </label>
+        <input type="integer" id="admission Fees" name="adm fees" placeholder="30,000"><br><br>
+        <input type="submit" value="Submit">
+
+
+
+        
+
+
+
+    </form>
+    </div>
+    
+    <script>
+        // Set Item
+        // localStorage.setItem("fname", "Shreya");
+        // localStorage.setItem("lname", "Singh");
+        // localStorage.setItem("integer", "6200340418");
+        // localStorage.setItem("LandlineNo", "9851600731");
+        // localStorage.setItem("emailaddress", "psshreyasingh23@gmail.com");
+        // localStorage.setItem("text", "New Delhi");
+        let value=prompt("Enter Details");
+        
+        localStorage.setItem("fname",value);
+        localStorage.setItem("lname",value);
+        console.log(localStorage.getItem(value));
+        
+        
+        </script>
+    
+</body>
+</html>

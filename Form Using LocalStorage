@@ -112,6 +112,11 @@
     </form>
     </div>
     <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
     
     <script>
         // Set Item
@@ -125,11 +130,11 @@
 
         //getItem
         document.getElementById("demo").innerHTML=localStorage.getItem("fname");
-        document.getElementById("demo").innerHTML=localStorage.getItem("lname");
-        document.getElementById("demo").innerHTML=localStorage.getItem("integer");
-        document.getElementById("demo").innerHTML=localStorage.getItem("LandlineNo");
-        document.getElementById("demo").innerHTML=localStorage.getItem("emailaddress");
-        document.getElementById("demo").innerHTML=localStorage.getItem("text");
+        document.getElementById("demo1").innerHTML=localStorage.getItem("lname");
+        document.getElementById("demo2").innerHTML=localStorage.getItem("integer");
+        document.getElementById("demo3").innerHTML=localStorage.getItem("LandlineNo");
+        document.getElementById("demo4").innerHTML=localStorage.getItem("emailaddress");
+        document.getElementById("demo5").innerHTML=localStorage.getItem("text");
 
         
         

@@ -1,0 +1,44 @@
+==> The removeItem() method removes the specified Storage Object item.
+
+==> The removeItem() method belongs to the Storage Object, which can be either a localStorage object or a sessionStorrage object.
+
+=*= Example of DeleteItem() Method =*=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete_Data_LS</title>
+</head>
+<body>
+    <h1><center><u><i>The Storage removeItem()  Method</i></u></center></h1>
+    <p>This is an example of removeItem() method of local Storage</p>
+    <h2><u><i>Missing Local Storage Item ?</i></u></h2>
+    <p>Since I don't have any specified item . SO , let's create it by Using Script </p>
+    <button onclick="createItem()">Create Local Storage Item</button>
+    <h2><u><i>Remove Item()</i></u></h2>
+    <p>Click the button to delete the item :</p>
+    <button onclick="deleteItem()">Delete Item</button>
+    <h2><u><i>Display Item()</i></u></h2>
+    <p>Click the button to display Item's value : </p>
+    <button onclick="DisplayItem()">Display item</button>
+    <p id="demo"></p>
+    <script>
+        function createItem(){
+            localStorage.mytime=Date.now();
+        }
+        function deleteItem(){
+            localStorage.removeItem()=("mytime");
+        }
+        function DisplayItem(){
+            var x=localStorage.getItem("mytime");
+            document.getElementById("demo").innerHTML=x;
+
+        }
+    </script>
+
+
+    
+</body>
+</html>
